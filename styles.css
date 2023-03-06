@@ -5,8 +5,9 @@ body {
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--font-color-base);
-  margin: 0;
+  margin: auto;
   padding: 0;
+  max-width: 425px;
 }
 
 *,
@@ -53,6 +54,7 @@ img {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 400;
+  font-family: 'Noto Emoji', sans-serif;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -65,6 +67,7 @@ img {
 }
 
 .bg-header {
+  width: 100%;
   background-color: rgb(35, 11, 141);
 }
 
@@ -83,6 +86,8 @@ img {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  max-width: 425px;
+  margin: auto;
   left: 0;
   right: 0;
   background-color: rgba(48, 26, 148, 0.9);
@@ -91,7 +96,7 @@ img {
 .mobile-form {
   width: 100%;
   position: relative;
-  top: 7rem;
+  top: 6rem;
 }
 
 .line {
@@ -103,7 +108,7 @@ img {
   width: 100%;
   height: 6rem;
   margin: auto;
-  padding: .6rem;
+  padding: 1rem;
 }
 
 img.icon {
@@ -125,8 +130,14 @@ img.icon {
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .full {
   grid-column: span 2;
+}
+
+.xcept {
+  grid-template-columns: 2.5rem 3fr 2fr;
 }
